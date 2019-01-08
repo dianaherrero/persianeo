@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"persianeo\startup_stm32f411xe.o"
+"persianeo\main.o"
+"persianeo\stm32f4xx_it.o"
+"persianeo\stm32f4xx_hal_msp.o"
+"persianeo\stm32f4xx_hal_adc.o"
+"persianeo\stm32f4xx_hal_adc_ex.o"
+"persianeo\stm32f4xx_hal_tim.o"
+"persianeo\stm32f4xx_hal_tim_ex.o"
+"persianeo\stm32f4xx_hal_rcc.o"
+"persianeo\stm32f4xx_hal_rcc_ex.o"
+"persianeo\stm32f4xx_hal_flash.o"
+"persianeo\stm32f4xx_hal_flash_ex.o"
+"persianeo\stm32f4xx_hal_flash_ramfunc.o"
+"persianeo\stm32f4xx_hal_gpio.o"
+"persianeo\stm32f4xx_hal_dma_ex.o"
+"persianeo\stm32f4xx_hal_dma.o"
+"persianeo\stm32f4xx_hal_pwr.o"
+"persianeo\stm32f4xx_hal_pwr_ex.o"
+"persianeo\stm32f4xx_hal_cortex.o"
+"persianeo\stm32f4xx_hal.o"
+"persianeo\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "persianeo\persianeo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "persianeo.map" -o persianeo\persianeo.axf
